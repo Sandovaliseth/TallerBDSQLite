@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="66dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_person" />
+
+    <TextView
+        android:id="@+id/tvNameContact"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/ivIcon"
+        android:gravity="center"
+        android:text="Nombre de usuario creado" />
+    <TextView
+        android:id="@+id/tvAddressContact"
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNameContact"
+        android:layout_toEndOf="@id/ivIcon"
+        android:gravity="center"
+        android:text="Direccion del contacto" />
+
+    <TextView
+        android:id="@+id/tvPhoneContact"
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAddressContact"
+        android:layout_toEndOf="@id/ivIcon"
+        android:gravity="center"
+        android:text="Telefono del contacto" />
+
+</RelativeLayout>
